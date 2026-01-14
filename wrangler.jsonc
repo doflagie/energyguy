@@ -1,8 +1,0 @@
-{
-  "name": "energyguy-pages",
-  "compatibility_date": "2026-01-14",
-  "main": "worker.js",
-  "assets": {
-    "directory": "."
-  }
-}
