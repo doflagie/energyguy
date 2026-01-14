@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This doflagie explains the framitz. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amateur Radio Station Grounding - Star configuration with lightning protection">
+    <title>Station Grounding - EnergyGuy LLC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header / Banner -->
+        <header>
+            <div class="banner">
+                <div>
+                    <h1>ENERGYGUY LLC</h1>
+                    <p class="tagline">Amateur Radio • Electronics • Engineering</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Wrapper -->
+        <div class="main-wrapper">
+            <!-- Navigation Sidebar -->
+            <nav>
+                <h3>Main Navigation</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/bio.html">About Me</a></li>
+                </ul>
+
+                <h3>Antenna Projects</h3>
+                <ul>
+                    <li><a href="longwire.html">Longwire Antennas</a></li>
+                    <li><a href="dipole.html">Dipole Antennas</a></li>
+                    <li><a href="loop.html">Loop Antennas</a></li>
+                    <li><a href="station_grounding.html">Station Grounding</a></li>
+                </ul>
+
+                <h3>Electronics Projects</h3>
+                <ul>
+                    <li><a href="../electronics/filters.html">RF Filter Design</a></li>
+                    <li><a href="../electronics/sdr_cluster.html">SDR Cluster</a></li>
+                    <li><a href="../electronics/faraday_cage.html">Faraday Cage Designs</a></li>
+                </ul>
+
+                <h3>Test Equipment</h3>
+                <ul>
+                    <li><a href="../projects/tinysa.html">TinySA Spectrum Analyzer</a></li>
+                    <li><a href="../projects/nanovna.html">NanoVNA</a></li>
+                    <li><a href="../projects/test_equipment.html">General Test Equipment</a></li>
+                </ul>
+
+                <h3>Telegraph & CW</h3>
+                <ul>
+                    <li><a href="../projects/ebook2cw.html">Ebook2CW</a></li>
+                    <li><a href="../projects/telegraph.html">Telegraph Systems</a></li>
+                    <li><a href="../projects/vibroplex.html">Vibroplex Bug Restoration</a></li>
+                </ul>
+
+                <h3>3D Printing</h3>
+                <ul>
+                    <li><a href="../projects/neveready.html">Neveready USB-C Battery</a></li>
+                    <li><a href="../projects/darkroom_safelight.html">Darkroom Safelight</a></li>
+                    <li><a href="../projects/ferro_rod.html">Ferro Rod Handle</a></li>
+                </ul>
+
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="../about/contact.html">Contact</a></li>
+                    <li><a href="../about/links.html">Useful Links</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main>
+                <h1>Amateur Radio Station Grounding Plan</h1>
+                <h2>Star Configuration with Lightning Protection</h2>
+
+                <p><strong>For:</strong> Paradise, CA (high lightning risk area - post-wildfire)<br>
+                <strong>Configuration:</strong> Star ground (single-point ground prevents loops)<br>
+                <strong>Status:</strong> Planning complete, ready for installation (January 2026)</p>
+
+                <h2>Why Grounding Matters</h2>
+
+                <p>A proper station grounding system serves three critical purposes:</p>
+
+                <ol>
+                    <li><strong>Safety:</strong> Protects you from electrical shock</li>
+                    <li><strong>Lightning Protection:</strong> Diverts strikes to ground, protects equipment</li>
+                    <li><strong>RFI Reduction:</strong> Common ground reduces noise, prevents ground loops</li>
+                </ol>
+
+                <p>My Navy SIGINT experience taught me that proper RF grounding is similar to shipboard practices: prevent loops, reduce interference, and maintain a single reference point for all equipment.</p>
+
+                <h2>Star Ground Architecture</h2>
+
+                <pre>
+                STATION GROUND BUS (6ga copper)
+                         |
+    ┌────────────────────┼────────────────────┐
+    |                    |                    |
+[27' Mast]          [Shack Ground]      [Utility Ground]
+Lightning            Equipment Ground     House Ground Rod
+Arrestors            (radios, SBCs)       (NEC required)
+    |                    |                    |
+    └────────────────────┴────────────────────┘
+                SINGLE EARTH GROUND
+               (8' copper rod, <25Ω)
+                </pre>
+
+                <p><strong>Why "star":</strong> All grounds connect to ONE central point (ground bus), then single connection to earth. This prevents current loops between different grounds.</p>
+
+                <div class="warning">
+                    <p><strong>Wrong Way (creates ground loop):</strong></p>
+                    <p>Radio → House Ground<br>
+                    ↓<br>
+                    Mast Ground (creates loop, causes RFI)</p>
+                </div>
+
+                <h2>Materials List</h2>
+
+                <h3>Budget Tiers</h3>
+
+                <table>
+                    <tr>
+                        <th>Budget Level</th>
+                        <th>Cost</th>
+                        <th>What You Get</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Minimal</strong></td>
+                        <td>$50</td>
+                        <td>Ground rod + basic wire, no lightning protection</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mid-Range</strong></td>
+                        <td>$200</td>
+                        <td>Proper station grounding + 1 arrestor</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full System</strong></td>
+                        <td>$400</td>
+                        <td>Complete lightning protection (3 antennas)</td>
+                    </tr>
+                </table>
+
+                <h3>Core Components</h3>
+
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Specification</th>
+                        <th>Quantity</th>
+                        <th>Est. Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Ground rod</td>
+                        <td>8' × 5/8" copper-clad steel</td>
+                        <td>1</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>Copper bus bar</td>
+                        <td>6ga solid copper wire, 10'</td>
+                        <td>1</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>Ground wire (bus to rod)</td>
+                        <td>6ga stranded copper, 25'</td>
+                        <td>1</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Ground wire (equipment)</td>
+                        <td>10ga stranded copper, 50'</td>
+                        <td>1</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Ground clamps</td>
+                        <td>Bronze, 5/8" rod to 6ga wire</td>
+                        <td>2</td>
+                        <td>$8</td>
+                    </tr>
+                    <tr>
+                        <td>Coax lightning arrestor</td>
+                        <td>N-type, gas discharge tube</td>
+                        <td>3</td>
+                        <td>$90</td>
+                    </tr>
+                </table>
+
+                <h2>Installation Sequence</h2>
+
+                <p>The installation is broken into four phases. Critically, <strong>phases 1-5 can be done NOW</strong> (winter 2026), before the mast arrives in spring:</p>
+
+                <h3>Phase 1: Earth Ground (Do First)</h3>
+
+                <ol>
+                    <li><strong>Drive ground rod:</strong> Use sledgehammer, drive 8' rod to within 6" of surface</li>
+                    <li><strong>Test resistance:</strong> Ideal <25Ω, acceptable <100Ω</li>
+                    <li><strong>Bond to utility ground:</strong> NEC requires all grounds bonded together</li>
+                </ol>
+
+                <div class="note">
+                    <p><strong>Paradise, CA Considerations:</strong> Rocky soil from volcanic activity and fire damage may make driving rod difficult. If you hit bedrock at 4-5 feet, that's acceptable. Multiple rods may be needed if resistance is high.</p>
+                </div>
+
+                <h3>Phase 2: Ground Bus Installation (Indoor)</h3>
+
+                <ol>
+                    <li><strong>Mount bus bar:</strong> 8' length of 6ga copper, mounted horizontally 4' above floor</li>
+                    <li><strong>Bus to earth ground:</strong> Run 6ga wire through wall to ground rod outside</li>
+                    <li><strong>Label connections:</strong> Each lug gets brass tag (e.g., "Coax 1 - Antenna", "Radio Power")</li>
+                </ol>
+
+                <h3>Phase 3: Equipment Grounding</h3>
+
+                <p>Each device gets its own connection to bus (star topology):</p>
+
+                <ul>
+                    <li><strong>Transceivers:</strong> 10ga wire from chassis ground to bus (<6' wire length)</li>
+                    <li><strong>Power supplies:</strong> Negative terminal to bus</li>
+                    <li><strong>Coax shield:</strong> Bonded to bus at entry point</li>
+                    <li><strong>Computer/SBCs:</strong> Metal case to bus (reduces RFI pickup)</li>
+                </ul>
+
+                <h3>Phase 4: Lightning Arrestors (Outside)</h3>
+
+                <p><strong>Mount OUTSIDE wall, between mast and shack entry:</strong></p>
+
+                <pre>
+[27' Mast]
+     |
+  [Coax runs down mast]
+     |
+  [Lightning arrestors] ← Mounted on outside wall
+     |                    Ground wire to rod
+  [Wall penetration]
+     |
+  [Shack equipment]
+                </pre>
+
+                <p><strong>Critical:</strong> Arrestors must be OUTSIDE, before coax enters shack. This ensures lightning is diverted to ground BEFORE entering your station.</p>
+
+                <h2>For 27' Telescoping Mast</h2>
+
+                <p>My planned mast installation (April-May 2026) will include:</p>
+
+                <ul>
+                    <li><strong>Mast base bonding:</strong> Copper strap from mast to ground rod (shortest path)</li>
+                    <li><strong>Tilt-down feature:</strong> Flexible bonding strap stays connected when lowered</li>
+                    <li><strong>EFHW antenna:</strong> Counterpoise wire also grounds to same bus</li>
+                </ul>
+
+                <h2>Testing Procedures</h2>
+
+                <h3>Initial Testing (Before Equipment Installed)</h3>
+
+                <ol>
+                    <li><strong>Resistance test:</strong> Rent ground resistance tester (Fluke 1625, $40/day)</li>
+                    <li><strong>Goal:</strong> <25Ω (excellent), <100Ω (acceptable)</li>
+                    <li><strong>If high:</strong> Add chemical treatment or second rod 6' away</li>
+                </ol>
+
+                <h3>After Installation</h3>
+
+                <ul>
+                    <li><strong>Visual inspection:</strong> Quarterly check for corrosion (green = bad)</li>
+                    <li><strong>RFI testing:</strong> Measure noise floor with/without equipment grounds</li>
+                    <li><strong>SWR check:</strong> Grounding shouldn't affect SWR significantly (if >0.5 change, check connections)</li>
+                </ul>
+
+                <h2>Lightning Protection Strategy</h2>
+
+                <h3>Direct Strike Protection</h3>
+
+                <p>The 27' mast with EFHW antenna is the tallest structure, making it the most likely lightning target. The protection strategy diverts strikes to ground:</p>
+
+                <pre>
+Lightning → Antenna → Coax → Arrestor → Ground Rod → Earth
+                               ↑
+                          (bypasses shack)
+                </pre>
+
+                <h3>Defense in Depth</h3>
+
+                <ol>
+                    <li><strong>Primary:</strong> Lightning arrestors outside (clamp voltage to ~100V)</li>
+                    <li><strong>Secondary:</strong> Disconnect antennas in thunderstorms</li>
+                    <li><strong>Tertiary:</strong> Unplug radios from AC power during storms</li>
+                </ol>
+
+                <h3>California Fire Risk</h3>
+
+                <p>Post-Camp Fire considerations for Paradise, CA:</p>
+
+                <ul>
+                    <li><strong>Clear 10' radius</strong> around ground rod (bare dirt, no vegetation)</li>
+                    <li>Ground rod area = defensible space</li>
+                    <li>Metal mast doesn't burn (safer than wood poles)</li>
+                </ul>
+
+                <h2>Common Mistakes to Avoid</h2>
+
+                <div class="warning">
+                    <h3>❌ Ground Loop</h3>
+                    <p><strong>Wrong:</strong> Radio grounded to house, antenna grounded to mast</p>
+                    <p><strong>Problem:</strong> Current flows in loop (House → Radio → Antenna → Mast → Soil → House)</p>
+                    <p><strong>Result:</strong> 60 Hz hum, RFI, potential shock hazard</p>
+                    <p><strong>Right:</strong> Star ground (all to one point)</p>
+                </div>
+
+                <div class="warning">
+                    <h3>❌ Long Ground Wire</h3>
+                    <p><strong>Wrong:</strong> 50' of wire from radio to ground rod</p>
+                    <p><strong>Problem:</strong> At HF, wire becomes inductor (high impedance)</p>
+                    <p><strong>Right:</strong> Keep ground wires <6' (radio to bus), <25' (bus to rod)</p>
+                </div>
+
+                <div class="warning">
+                    <h3>❌ Arrestors Inside</h3>
+                    <p><strong>Wrong:</strong> Lightning arrestor in shack, after coax enters</p>
+                    <p><strong>Problem:</strong> Lightning enters shack before being diverted</p>
+                    <p><strong>Right:</strong> Arrestors OUTSIDE, before wall penetration</p>
+                </div>
+
+                <h2>NEC Code Compliance</h2>
+
+                <p>National Electrical Code requirements:</p>
+
+                <ul>
+                    <li><strong>Bonding:</strong> All ground rods must be bonded together (ham shack → utility ground)</li>
+                    <li><strong>Rod depth:</strong> 8' minimum (or to bedrock if shallower)</li>
+                    <li><strong>Clamps:</strong> Listed for direct burial (bronze or copper, no aluminum)</li>
+                    <li><strong>Inspection:</strong> May need permit in Paradise (check county, post-fire rebuilding regs)</li>
+                </ul>
+
+                <h2>Download Full Plan</h2>
+
+                <p>The complete station grounding plan (20+ pages) includes:</p>
+
+                <ul>
+                    <li>Detailed materials BOM with sources and part numbers</li>
+                    <li>Step-by-step installation instructions with photos/diagrams</li>
+                    <li>Testing procedures and troubleshooting guide</li>
+                    <li>Paradise, CA specific considerations</li>
+                    <li>Maintenance schedule and inspection checklist</li>
+                </ul>
+
+                <p><a href="../../station_grounding_plan.md">Download: station_grounding_plan.md</a> (Markdown format, 16K)</p>
+
+                <h2>Timeline</h2>
+
+                <table>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Timeframe</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Planning</td>
+                        <td>January 2026</td>
+                        <td><strong>✓ Complete</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Ground rod installation</td>
+                        <td>Winter 2026 (can do now)</td>
+                        <td>Pending budget</td>
+                    </tr>
+                    <tr>
+                        <td>Ground bus installation</td>
+                        <td>Winter 2026</td>
+                        <td>Pending rod completion</td>
+                    </tr>
+                    <tr>
+                        <td>Mast installation</td>
+                        <td>April-May 2026 (spring)</td>
+                        <td>Weather-dependent</td>
+                    </tr>
+                    <tr>
+                        <td>Lightning arrestor installation</td>
+                        <td>During mast install</td>
+                        <td>Pending mast</td>
+                    </tr>
+                    <tr>
+                        <td>Equipment grounding</td>
+                        <td>After mast complete</td>
+                        <td>Ongoing</td>
+                    </tr>
+                </table>
+
+                <h2>Related Projects</h2>
+
+                <ul>
+                    <li><a href="longwire.html">Longwire Antenna Design</a> - EFHW for 27' mast</li>
+                    <li><a href="../electronics/faraday_cage.html">Faraday Cage Design</a> - RFI shielding for SDR cluster</li>
+                    <li><a href="../projects/test_equipment.html">Test Equipment</a> - NanoVNA for SWR testing</li>
+                </ul>
+
+                <p class="text-center mt-20">
+                    <strong>73 de Mervyn Martin</strong><br>
+                    <em>Paradise, California</em>
+                </p>
+            </main>
+        </div>
+
+        <!-- Footer / Address Block -->
+        <footer>
+            <div class="address-block">
+                <h3>EnergyGuy LLC</h3>
+                <p>Mervyn Martin, Proprietor</p>
+                <p>Paradise, California 95969</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:merv@doflagie.com">merv@energyguy.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Website:</strong><br>
+                        <a href="http://www.doflagie.com">www.doflagie.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>GitHub:</strong><br>
+                        <a href="https://github.com/doflagie" target="_blank">github.com/doflagie</a>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; 2026 EnergyGuy LLC. All rights reserved.</p>
+                    <p>Documentation and designs shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> unless otherwise noted.</p>
+                    <p>Amateur Radio | Electronics | Engineering | Knowledge Preservation</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

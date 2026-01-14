@@ -1,0 +1,47 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1396 >>
+stream
+BT /F1 16 Tf 50.00 782.00 Td (Theory of Long Wire Antennas) Tj ET
+BT /F1 10 Tf 50.00 752.00 Td (Date: 2026-01-12) Tj ET
+BT /F1 11 Tf 50.00 728.00 Td (A long wire antenna is a straight conductor longer than about 1/2 wavelength.) Tj ET
+BT /F1 11 Tf 50.00 712.00 Td (As length increases, current distribution forms multiple standing-wave lobes.) Tj ET
+BT /F1 11 Tf 50.00 696.00 Td (The radiation pattern narrows in the plane of the wire with multiple main lobes.) Tj ET
+BT /F1 11 Tf 50.00 680.00 Td (End effects raise the resonant length above the ideal free-space length.) Tj ET
+BT /F1 11 Tf 50.00 664.00 Td (Height above ground and ground conductivity affect impedance and pattern.) Tj ET
+BT /F1 11 Tf 50.00 648.00 Td (End-fed long wires usually present high feed impedance at the end.) Tj ET
+BT /F1 11 Tf 50.00 632.00 Td (Feed impedance varies strongly with frequency and wire length.) Tj ET
+BT /F1 11 Tf 50.00 616.00 Td (Counterpoise or earth connection is needed for end-fed systems.) Tj ET
+BT /F1 11 Tf 50.00 600.00 Td (With balanced feed, the wire may be center-fed or off-center-fed.) Tj ET
+BT /F1 11 Tf 50.00 584.00 Td (For portable HF, random-length wires are common with tuners.) Tj ET
+BT /F1 11 Tf 50.00 568.00 Td (Antenna efficiency depends on conductor loss and ground loss.) Tj ET
+BT /F1 11 Tf 50.00 552.00 Td (Modeling is useful because simple formulas are only approximate.) Tj ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1765
+%%EOF

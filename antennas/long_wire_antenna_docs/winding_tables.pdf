@@ -1,0 +1,43 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 901 >>
+stream
+BT /F1 16 Tf 50.00 782.00 Td (Calculating Winding Tables) Tj ET
+BT /F1 10 Tf 50.00 752.00 Td (Date: 2026-01-12) Tj ET
+BT /F1 11 Tf 50.00 728.00 Td (Winding tables are used for loading coils or transformer windings.) Tj ET
+BT /F1 11 Tf 50.00 712.00 Td (Select target inductance L and core form dimensions.) Tj ET
+BT /F1 11 Tf 50.00 696.00 Td (For air-core solenoid: L\(uH\) = \(r^2 * N^2\) / \(9r + 10l\).) Tj ET
+BT /F1 11 Tf 50.00 680.00 Td (Solve for turns N and calculate turn spacing for uniform winding.) Tj ET
+BT /F1 11 Tf 50.00 664.00 Td (If using ferrite, use AL value: L\(nH\) = AL * N^2.) Tj ET
+BT /F1 11 Tf 50.00 648.00 Td (Create a table of N vs L for common tap points \(e.g., 10, 20, 30 turns\).) Tj ET
+BT /F1 11 Tf 50.00 632.00 Td (Include wire gauge, diameter, and maximum current rating.) Tj ET
+BT /F1 11 Tf 50.00 616.00 Td (Validate inductance with an LCR meter when possible.) Tj ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1269
+%%EOF

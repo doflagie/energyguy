@@ -1,0 +1,40 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 579 >>
+stream
+BT /F1 16 Tf 50.00 782.00 Td (Deployment Techniques) Tj ET
+BT /F1 10 Tf 50.00 752.00 Td (Date: 2026-01-12) Tj ET
+BT /F1 11 Tf 50.00 728.00 Td (Survey the site for clear spans, trees, and safe anchor points.) Tj ET
+BT /F1 11 Tf 50.00 712.00 Td (Keep the wire away from power lines and public access areas.) Tj ET
+BT /F1 11 Tf 50.00 696.00 Td (Use a throw line or mast to elevate the far end.) Tj ET
+BT /F1 11 Tf 50.00 680.00 Td (Tension gently to reduce sag while avoiding overstress.) Tj ET
+BT /F1 11 Tf 50.00 664.00 Td (Route feed line downward to reduce RF on the line.) Tj ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+947
+%%EOF

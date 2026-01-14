@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This doflagie explains the framitz. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Antenna Design Library - Complete documentation for 40+ antenna types">
+    <title>Antenna Library - EnergyGuy LLC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header / Banner -->
+        <header>
+            <div class="banner">
+                <div>
+                    <h1>ENERGYGUY LLC</h1>
+                    <p class="tagline">Amateur Radio • Electronics • Engineering</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Wrapper -->
+        <div class="main-wrapper">
+            <!-- Navigation Sidebar -->
+            <nav>
+                <h3>Main Navigation</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/bio.html">About Me</a></li>
+                </ul>
+
+                <h3>Antenna Library</h3>
+                <ul>
+                    <li><a href="#wire-antennas">Wire Antennas</a></li>
+                    <li><a href="#vertical-antennas">Vertical Antennas</a></li>
+                    <li><a href="#loop-antennas">Loop Antennas</a></li>
+                    <li><a href="#beam-antennas">Beam/Array Antennas</a></li>
+                    <li><a href="#portable">Portable Antennas</a></li>
+                    <li><a href="#receiving">Receiving Antennas</a></li>
+                </ul>
+
+                <h3>Antenna Projects</h3>
+                <ul>
+                    <li><strong>Library</strong></li>
+                    <li><a href="index.html">Antenna Library (40+ Types)</a></li>
+                    <li><a href="longwire.html">Longwire Antennas</a></li>
+                    <li><a href="long_wire_antenna/index.html">Long Wire Antenna</a></li>
+                    <li><a href="loop.html">Loop Antennas</a></li>
+                    <li><a href="loop_antenna/index.html">Loop Antenna</a></li>
+                    <li><a href="end_fed_quarter_wave/index.html">End-Fed Quarter-Wave</a></li>
+                    <li><a href="station_grounding.html">Station Grounding</a></li>
+                    <li><a href="antenna_gear/index.html">Antenna Gear: L/C Traps</a></li>
+                    <li><a href="../projects/un-un/index.html">UN-UN Transformers</a></li>
+
+                    <li><strong>Dipole Family</strong></li>
+                    <li><a href="dipole.html">Dipole Antennas</a></li>
+                    <li><a href="dipole/index.html">Dipole Docs</a></li>
+                    <li><a href="sloped_dipole/index.html">Sloped Dipole Docs</a></li>
+                    <li><a href="folded_dipole/index.html">Folded Dipole Docs</a></li>
+                    <li><a href="tri_folded_dipole/index.html">Tri Folded Dipole Docs</a></li>
+                    <li><a href="inverted_vee_dipole/index.html">Inverted Vee Dipole Docs</a></li>
+                    <li><a href="off_center_fed_dipole/index.html">Off Center Fed Dipole Docs</a></li>
+                    <li><a href="tilted_terminated_folded_dipole/index.html">Tilted Terminated Folded Dipole Docs</a></li>
+                    <li><a href="fan_dipole/index.html">Fan Dipole Docs</a></li>
+                    <li><a href="log_periodic_dipole_array/index.html">Log Periodic Dipole Array Docs</a></li>
+
+                    <li><strong>Loop Family</strong></li>
+                    <li><a href="full_wave_loop/index.html">Full Wave Loop Docs</a></li>
+                    <li><a href="magnetic_loop/index.html">Magnetic Loop Docs</a></li>
+                    <li><a href="kmr_400_magnetic_loop/index.html">KMR 400 Magnetic Loop Docs</a></li>
+                    <li><a href="frame_loop/index.html">Frame Loop Docs</a></li>
+                    <li><a href="hex_loop/index.html">Hex Loop Docs</a></li>
+                    <li><a href="octal_loop/index.html">Octal Loop Docs</a></li>
+
+                    <li><strong>End-Fed and Random Wire</strong></li>
+                    <li><a href="end_fed_half_wave/index.html">End Fed Half Wave Docs</a></li>
+                    <li><a href="end_fed_random_wire/index.html">End Fed Random Wire Docs</a></li>
+                    <li><a href="rybakov/index.html">Rybakov Docs</a></li>
+
+                    <li><strong>Vertical and Mobile</strong></li>
+                    <li><a href="flower_pot/index.html">Flower Pot Docs</a></li>
+                    <li><a href="ground_plane_for_vhf_uhf/index.html">Ground Plane for VHF/UHF Docs</a></li>
+                    <li><a href="screwdriver/index.html">Screwdriver Docs</a></li>
+                    <li><a href="telescopic/index.html">Telescopic Docs</a></li>
+                    <li><a href="elevated_radial_systems_for_vertical_antennas/index.html">Elevated Radial Systems Docs</a></li>
+
+                    <li><strong>Beam and Array</strong></li>
+                    <li><a href="moxon/index.html">Moxon Docs</a></li>
+                    <li><a href="yagi/index.html">Yagi Docs</a></li>
+                    <li><a href="tape_measure_yagi/index.html">Tape Measure Yagi Docs</a></li>
+                    <li><a href="cubical_quad/index.html">Cubical Quad Docs</a></li>
+                    <li><a href="rhombic/index.html">Rhombic Docs</a></li>
+                    <li><a href="phased_array_of_2_antennas/index.html">Phased Array of 2 Antennas Docs</a></li>
+                    <li><a href="phased_array_of_4_antennas/index.html">Phased Array of 4 Antennas Docs</a></li>
+
+                    <li><strong>VHF/UHF and Specialty</strong></li>
+                    <li><a href="j_pole/index.html">J-Pole Docs</a></li>
+                    <li><a href="slim_jim/index.html">Slim Jim Docs</a></li>
+                    <li><a href="discone/index.html">Discone Docs</a></li>
+                    <li><a href="hentenna/index.html">Hentenna Docs</a></li>
+                    <li><a href="helical_for_satellite_and_eme_operation/index.html">Helical for Satellite/EME Docs</a></li>
+                    <li><a href="turnstile_and_cross_polarized_for_satellite_reception/index.html">Turnstile/Cross-Polarized Docs</a></li>
+
+                    <li><strong>Receiving</strong></li>
+                    <li><a href="beverage_receiving/index.html">Beverage Receiving Docs</a></li>
+                    <li><a href="terminated_sloper_receiving/index.html">Terminated Sloper Receiving Docs</a></li>
+                    <li><a href="active_receiving/index.html">Active Receiving Docs</a></li>
+
+                    <li><strong>Other</strong></li>
+                    <li><a href="shunt_fed/index.html">Shunt Fed Docs</a></li>
+                    <li><a href="near_vertical_incidence_skywave/index.html">Near Vertical Incidence Skywave Docs</a></li>
+
+                    <li><a href="../antenna/antenna_gear/index.html">Antenna Gear Library</a></li></ul>
+
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="../about/contact.html">Contact</a></li>
+                    <li><a href="../about/links.html">Useful Links</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main>
+                <h1>Antenna Design Library</h1>
+
+                <p>Comprehensive documentation for 40+ antenna types. Each antenna includes theory of operation, design calculations, NEC models, construction guides, tuning procedures, and complete worked examples.</p>
+
+                <div class="note">
+                    <p><strong>Documentation Format:</strong> Each antenna type includes 12 detailed documents covering everything from electromagnetic theory to field deployment. Perfect for learning, reference, or actual construction.</p>
+                </div>
+
+                <h2 id="wire-antennas">Wire Antennas</h2>
+
+                <p>Horizontally polarized wire antennas for HF bands. Easy to build, effective, and versatile.</p>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Dipole</h3>
+                        <p>Half-wave center-fed antenna. The classic reference antenna. 50-75Ω impedance, omnidirectional broadside pattern.</p>
+                        <ul>
+                            <li>Simple construction</li>
+                            <li>Good efficiency</li>
+                            <li>All HF bands</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Inverted-V Dipole</h3>
+                        <p>Dipole with sloped elements from single support. Lower impedance (40-50Ω), higher take-off angle, easier to deploy.</p>
+                        <ul>
+                            <li>Single support point</li>
+                            <li>Good for NVIS</li>
+                            <li>Easy portable setup</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Off-Center Fed Dipole (OCFD)</h3>
+                        <p>Fed at 1/3 point for multi-band operation. 200Ω impedance, requires 4:1 balun. Works 80m through 10m.</p>
+                        <ul>
+                            <li>Multi-band (no traps)</li>
+                            <li>40m/20m/15m/10m</li>
+                            <li>Moderate complexity</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>End-Fed Half Wave (EFHW)</h3>
+                        <p>Half-wave fed at one end. High impedance (2400Ω), requires 49:1 transformer. Excellent portable antenna.</p>
+                        <ul>
+                            <li>Single support point</li>
+                            <li>No radials needed</li>
+                            <li>Multi-band with tuner</li>
+                        </ul>
+                        <a href="../../individual/end_fed_half_wave/README.html">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Fan Dipole</h3>
+                        <p>Multiple dipoles for different bands fed from common point. True multi-band without traps or tuner.</p>
+                        <ul>
+                            <li>True multi-band</li>
+                            <li>No traps/tuner</li>
+                            <li>Permanent installation</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Folded Dipole</h3>
+                        <p>Dipole with parallel conductor. 300Ω impedance (4× standard dipole). Used for driven element in Yagis.</p>
+                        <ul>
+                            <li>Broader bandwidth</li>
+                            <li>4:1 impedance step-up</li>
+                            <li>Mechanically robust</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+                </div>
+
+                <h2 id="vertical-antennas">Vertical Antennas</h2>
+
+                <p>Vertically polarized antennas with low take-off angle. Excellent for DX. Requires good ground system.</p>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Quarter-Wave Vertical</h3>
+                        <p>Classic ground plane antenna. 36Ω impedance with radials. Omnidirectional low-angle radiation.</p>
+                        <ul>
+                            <li>Omnidirectional</li>
+                            <li>Low angle (DX)</li>
+                            <li>Needs radials (4-16)</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Telescopic Vertical</h3>
+                        <p>Portable telescoping whip antenna. Compact, adjustable length. Use with radials or counterpoise.</p>
+                        <ul>
+                            <li>Highly portable</li>
+                            <li>Multi-band tuning</li>
+                            <li>QRP operations</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>J-Pole / Slim Jim</h3>
+                        <p>End-fed half-wave vertical. No radials needed. Popular for VHF/UHF. Can work on HF with matching.</p>
+                        <ul>
+                            <li>No radials</li>
+                            <li>Vertical polarization</li>
+                            <li>Simple construction</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Flower Pot</h3>
+                        <p>Sleeve dipole antenna. Popular for 2m/70cm dual-band. Excellent portable VHF/UHF antenna.</p>
+                        <ul>
+                            <li>Dual-band capable</li>
+                            <li>No radials</li>
+                            <li>Portable/base station</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+                </div>
+
+                <h2 id="loop-antennas">Loop Antennas</h2>
+
+                <p>Closed-loop antennas. Full-wave loops are efficient. Small magnetic loops are compact but narrow-band.</p>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Full-Wave Loop</h3>
+                        <p>One wavelength loop (diamond, square, or triangle). 100-150Ω impedance. Low noise, directional.</p>
+                        <ul>
+                            <li>Quiet reception</li>
+                            <li>Directional nulls</li>
+                            <li>Multi-band options</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Magnetic Loop</h3>
+                        <p>Small (< 0.1λ) tuned loop. Very compact. Requires vacuum capacitor for tuning. Sharp bandwidth.</p>
+                        <ul>
+                            <li>Very compact</li>
+                            <li>Low noise floor</li>
+                            <li>Apartment-friendly</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Cubical Quad</h3>
+                        <p>Two full-wave loops (driven element + reflector). Higher gain than Yagi, quieter. 50Ω feed.</p>
+                        <ul>
+                            <li>Higher gain than Yagi</li>
+                            <li>Quieter receive</li>
+                            <li>Mechanically complex</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Delta Loop</h3>
+                        <p>Triangular full-wave loop. Can be oriented for vertical or horizontal polarization. Good all-around antenna.</p>
+                        <ul>
+                            <li>Versatile orientation</li>
+                            <li>Good efficiency</li>
+                            <li>Simple construction</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+                </div>
+
+                <h2 id="beam-antennas">Beam and Array Antennas</h2>
+
+                <p>Directional antennas with gain. Point at target for maximum signal. Nulls reject interference.</p>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Yagi (3-Element)</h3>
+                        <p>Classic beam antenna. Reflector + driven element + director. 6-8 dBi gain. Rotatable for azimuth control.</p>
+                        <ul>
+                            <li>Good gain (6-8 dBi)</li>
+                            <li>Sharp nulls</li>
+                            <li>Requires rotation</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Moxon Rectangle</h3>
+                        <p>Two-element parasitic beam. Compact, good F/B ratio. No boom. Easier to build than Yagi.</p>
+                        <ul>
+                            <li>Compact design</li>
+                            <li>Good F/B ratio</li>
+                            <li>Simpler than Yagi</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Log Periodic Dipole Array (LPDA)</h3>
+                        <p>Wideband beam antenna. Multiple dipoles in logarithmic spacing. Covers multiple bands without tuning.</p>
+                        <ul>
+                            <li>Wide bandwidth</li>
+                            <li>Multi-band coverage</li>
+                            <li>Complex construction</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Phased Array (2 or 4 elements)</h3>
+                        <p>Multiple vertical elements with adjustable phasing. Steerable pattern. Excellent for 160m/80m DX.</p>
+                        <ul>
+                            <li>Steerable nulls</li>
+                            <li>Low-band DX</li>
+                            <li>Complex feed system</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+                </div>
+
+                <h2 id="portable">Portable and Field Antennas</h2>
+
+                <p>Lightweight, compact antennas for POTA, SOTA, Field Day, and emergency operations.</p>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>End-Fed Quarter Wave</h3>
+                        <p>Simple vertical for portable ops. Needs counterpoise wire. Works with 9:1 or 49:1 unun.</p>
+                        <ul>
+                            <li>Very portable</li>
+                            <li>Quick deploy</li>
+                            <li>Needs counterpoise</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Tape Measure Yagi</h3>
+                        <p>Lightweight 3-element Yagi built from measuring tapes. Popular for 2m fox hunting and satellite work.</p>
+                        <ul>
+                            <li>Very lightweight</li>
+                            <li>Low cost</li>
+                            <li>Great for satellites</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Helical Antenna</h3>
+                        <p>Circular polarization. Excellent for satellite communications. Adjustable pitch for frequency tuning.</p>
+                        <ul>
+                            <li>Circular polarization</li>
+                            <li>High gain</li>
+                            <li>Satellite/EME use</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+                </div>
+
+                <h2 id="receiving">Specialized Receiving Antennas</h2>
+
+                <p>Optimized for reception only. Excellent for listening, SDR, contest support, or learning propagation.</p>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Beverage (Long-Wire RX)</h3>
+                        <p>Long wire antenna (1-2 wavelengths) for low-band DX reception. Very low noise, directional. Receiving only.</p>
+                        <ul>
+                            <li>Extremely quiet</li>
+                            <li>Low-angle DX</li>
+                            <li>160m/80m/40m</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Active Receiving Antenna</h3>
+                        <p>Short antenna with amplifier. Compact receiving solution for limited space. Broadband coverage.</p>
+                        <ul>
+                            <li>Very compact</li>
+                            <li>Wide bandwidth</li>
+                            <li>Requires power</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Terminated Sloper</h3>
+                        <p>Sloping wire with terminating resistor. Directional receiving antenna. Good for contest operators.</p>
+                        <ul>
+                            <li>Directional</li>
+                            <li>Quiet</li>
+                            <li>Low-angle DX</li>
+                        </ul>
+                        <a href="#">Documentation →</a>
+                    </div>
+                </div>
+
+                <h2>Using This Library</h2>
+
+                <h3>Documentation Structure</h3>
+
+                <p>Each antenna type includes 12 comprehensive documents:</p>
+
+                <ol>
+                    <li><strong>Theory of Operation</strong> - How it works (EM principles, radiation patterns)</li>
+                    <li><strong>Design Calculations</strong> - Formulas and calculations with Python scripts</li>
+                    <li><strong>NEC Model</strong> - EZNEC/4nec2 model file for simulation</li>
+                    <li><strong>Winding Tables</strong> - Loading coils, traps, matching transformers</li>
+                    <li><strong>Element Lengths</strong> - Cut charts for all ham bands</li>
+                    <li><strong>Feed Point</strong> - Location, impedance, balun requirements</li>
+                    <li><strong>Matching Methods</strong> - Networks, transformers, tuning</li>
+                    <li><strong>Construction</strong> - Materials, tools, step-by-step assembly</li>
+                    <li><strong>Deployment</strong> - Installation, site selection, safety</li>
+                    <li><strong>Tuning</strong> - SWR optimization, trimming procedures</li>
+                    <li><strong>Assembly Procedures</strong> - Detailed phase-by-phase guide</li>
+                    <li><strong>Example Build</strong> - Complete real-world project with results</li>
+                </ol>
+
+                <h3>Quick Reference</h3>
+
+                <p>For experienced builders:</p>
+                <ul>
+                    <li>Go straight to <strong>Element Lengths</strong> for cut charts</li>
+                    <li>Check <strong>Matching Methods</strong> for feed point details</li>
+                    <li>Review <strong>Example Build</strong> for bill of materials and cost</li>
+                </ul>
+
+                <h3>Learning Path</h3>
+
+                <p>For beginners:</p>
+                <ol>
+                    <li>Start with <strong>Theory of Operation</strong> to understand fundamentals</li>
+                    <li>Study <strong>Design Calculations</strong> to learn the math</li>
+                    <li>Review <strong>Example Build</strong> before starting your own project</li>
+                    <li>Follow <strong>Construction</strong> and <strong>Assembly Procedures</strong> step by step</li>
+                </ol>
+
+                <h3>Antenna Modeling</h3>
+
+                <p>Each antenna includes a NEC model file that can be opened in:</p>
+                <ul>
+                    <li><strong>EZNEC</strong> - Commercial Windows antenna modeling software</li>
+                    <li><strong>4nec2</strong> - Free NEC-2 based modeler (Windows)</li>
+                    <li><strong>xnec2c</strong> - Linux port of NEC-2</li>
+                </ul>
+
+                <p>Use models to optimize for your specific installation (height, ground type, nearby objects).</p>
+
+                <h2>Generating Documentation</h2>
+
+                <p>The complete antenna library can be generated using the Python script:</p>
+
+                <pre><code># Generate all 40+ antenna types
+python3 generate_antenna.py
+
+# Generate single antenna for testing
+python3 generate_antenna.py --single "dipole"
+
+# Output location
+/media/merv/hank/scratch/claude-code/individual/</code></pre>
+
+                <div class="note">
+                    <p><strong>Automation:</strong> All documentation is generated from a single Python script. Ensures consistency across all antenna types and makes updates easy.</p>
+                </div>
+
+                <h2>Contributing</h2>
+
+                <p>Found an error? Have a suggestion? Want to add a new antenna type?</p>
+
+                <ul>
+                    <li>Email: <a href="mailto:merv@doflagie.com">merv@energyguy.com</a></li>
+                    <li>GitHub: <a href="https://github.com/doflagie" target="_blank">github.com/doflagie</a></li>
+                </ul>
+
+                <h2>License</h2>
+
+                <p>All antenna documentation shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></p>
+
+                <p>You are free to:</p>
+                <ul>
+                    <li>Use these designs for personal or commercial projects</li>
+                    <li>Share and redistribute</li>
+                    <li>Adapt and build upon</li>
+                </ul>
+
+                <p>Under these terms:</p>
+                <ul>
+                    <li>Give appropriate credit</li>
+                    <li>Share improvements under same license</li>
+                </ul>
+
+                <p class="text-center mt-20">
+                    <strong>73 de Mervyn Martin</strong><br>
+                    <em>Merced, California</em><br>
+                    <em>U.S. Navy Veteran (CTM, 1983-2004)</em>
+                </p>
+            </main>
+        </div>
+
+        <!-- Footer / Address Block -->
+        <footer>
+            <div class="address-block">
+                <h3>EnergyGuy LLC</h3>
+                <p>Mervyn Martin, Proprietor</p>
+                <p>Merced, California 95340</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:merv@doflagie.com">merv@energyguy.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Website:</strong><br>
+                        <a href="http://www.doflagie.com">www.doflagie.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>GitHub:</strong><br>
+                        <a href="https://github.com/doflagie" target="_blank">github.com/doflagie</a>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; 2026 EnergyGuy LLC. All rights reserved.</p>
+                    <p>Documentation and designs shared under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> unless otherwise noted.</p>
+                    <p>Amateur Radio | Electronics | Engineering | Knowledge Preservation</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

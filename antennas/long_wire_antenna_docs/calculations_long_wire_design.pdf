@@ -1,0 +1,45 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1109 >>
+stream
+BT /F1 16 Tf 50.00 782.00 Td (Design Calculations for Long Wire Antenna) Tj ET
+BT /F1 10 Tf 50.00 752.00 Td (Date: 2026-01-12) Tj ET
+BT /F1 11 Tf 50.00 728.00 Td (Define target band\(s\) and choose a practical wire length.) Tj ET
+BT /F1 11 Tf 50.00 712.00 Td (Start length Lm = 150 / f\(MHz\) meters for half-wave estimate.) Tj ET
+BT /F1 11 Tf 50.00 696.00 Td (Apply velocity factor: L = Lm * VF \(typical VF 0.95 for bare wire\).) Tj ET
+BT /F1 11 Tf 50.00 680.00 Td (For long wire, pick L = n * \(lambda / 2\) where n >= 1.) Tj ET
+BT /F1 11 Tf 50.00 664.00 Td (Estimate feed impedance with modeling or tables for L/lambda.) Tj ET
+BT /F1 11 Tf 50.00 648.00 Td (Choose feed method: end-fed with transformer or balanced line.) Tj ET
+BT /F1 11 Tf 50.00 632.00 Td (Select matching: 9:1 unun for random wire, 49:1 for EFHW.) Tj ET
+BT /F1 11 Tf 50.00 616.00 Td (Check current maxima to avoid feeding at a current null.) Tj ET
+BT /F1 11 Tf 50.00 600.00 Td (Estimate required counterpoise length ~0.05 to 0.25 lambda.) Tj ET
+BT /F1 11 Tf 50.00 584.00 Td (Verify mechanical sag and tension for the chosen span.) Tj ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1478
+%%EOF
