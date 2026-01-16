@@ -485,4 +485,4 @@ This website provides:
 **The foundation is built. Now it's time to fill it with your knowledge and experience.**
 
 73 de Mervyn Martin
-Paradise, California
+Merced, California

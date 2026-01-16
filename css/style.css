@@ -94,6 +94,40 @@ nav h3 {
     border-bottom: 2px solid #4a7ba7;
 }
 
+nav .nav-group {
+    margin: 0 0 15px;
+}
+
+nav .nav-group summary {
+    list-style: none;
+    cursor: pointer;
+    color: #2c5f8d;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4a7ba7;
+}
+
+nav .nav-group summary::-webkit-details-marker {
+    display: none;
+}
+
+nav .nav-group summary::after {
+    content: "▸";
+    float: right;
+    color: #6c7a89;
+}
+
+nav .nav-group[open] summary::after {
+    content: "▾";
+}
+
+nav .nav-group ul {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
 nav ul {
     list-style-type: none;
     margin-bottom: 25px;
